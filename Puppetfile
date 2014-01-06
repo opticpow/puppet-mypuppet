@@ -11,8 +11,8 @@ mod 'example42/apache',     '2.1.3'
 mod 'example42/mysql',      '2.1.1'
 
 mod 'zack/r10k',            '0.0.7'
-mod 'puppetlabs/ruby'       '0.1.0'
-mod 'puppetlabs/stdlib'     '4.1.0'
+mod 'puppetlabs/ruby',      '0.1.0'
+mod 'puppetlabs/stdlib',    '4.1.0'
 
 mod 'hiera',
     :git => 'https://github.com/hunner/puppet-hiera.git',
