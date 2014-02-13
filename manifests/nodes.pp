@@ -4,10 +4,18 @@ node default {
 
 node unix_default {
     include screen
-    include pbis
 }
 
 node styx inherits unix_default {
-    # noop
+  class { 'hiera':
+    hierarchy    => [
+      '%{::fqdn}',
+      '%{::domain}',
+      'common'],
+    backends     => 'yaml',
+    extra_config => '
+:yaml:
+    :datadir: /etc/puppet/hieradata'
+  } 
 }
 
