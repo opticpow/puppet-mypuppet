@@ -22,6 +22,6 @@ mod 'screen',
     :git => 'https://github.com/opticpow/puppet-screen.git'
 
 mod 'pbis',
-  :git => 'https://github.com/ctf/puppet-pbis.git'
+  :git => 'https://github.com/ctf/puppet-pbis.git',
   :ref => '0fd017c2d000b6942d9984b44dfce38e8017bb68'
 
