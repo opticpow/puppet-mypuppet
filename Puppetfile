@@ -21,3 +21,6 @@ mod 'hiera',
 mod 'screen',
     :git => 'https://github.com/opticpow/puppet-screen.git'
 
+mod 'pbis',
+  :git => 'https://github.com/ctf/puppet-pbis.git'
+
