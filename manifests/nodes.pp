@@ -12,10 +12,7 @@ node styx inherits unix_default {
       '%{::fqdn}',
       '%{::domain}',
       'common'],
-    backends     => 'yaml',
-    extra_config => '
-:yaml:
-    :datadir: /etc/puppet/hieradata'
+    backends     => 'yaml'
   } 
 }
 
