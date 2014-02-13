@@ -17,3 +17,7 @@ mod 'puppetlabs/stdlib',    '4.1.0'
 mod 'hiera',
     :git => 'https://github.com/hunner/puppet-hiera.git',
     :ref => '5cea338b175262edb4f2a63979db74160e48ab63'
+
+mod 'screen',
+    :git => 'https://github.com/opticpow/puppet-screen.git'
+
