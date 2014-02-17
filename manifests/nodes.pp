@@ -6,6 +6,11 @@ node unix_default {
     include screen
     include localrepo
     include domain
+
+    class { 'sudo':
+      priority => 10,
+      content  => "%wheel ALL=(ALL) NOPASSWD: ALL",
+    }
 }
 
 node styx inherits unix_default {

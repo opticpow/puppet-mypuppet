@@ -16,6 +16,8 @@ mod 'puppetlabs/stdlib',    '4.1.0'
 
 mod 'hunner/hiera',         '0.3.1'
 
+mod 'saz/sudo',             '3.0.1'
+
 mod 'screen',
     :git => 'https://github.com/opticpow/puppet-screen.git'
 
