@@ -13,8 +13,8 @@ node styx inherits unix_default {
     server => 'styx.ingram.internal'
     dns_alt_names => 'styx.ingram.internal,styx,puppet',
     #prerun_command => 'r10k deploy environment -p',
-    module_path => '/etc/puppet/environments/\$environment/modules',
-    manifest_path => '/etc/puppet/environments/\$environment/manifests/site.pp',
+    module_path => '/etc/puppet/environments/$environment/modules',
+    manifest_path => '/etc/puppet/environments/$environment/manifests/site.pp',
     passenger => true,
     environment => 'master',
     runmode => 'manual',
