@@ -7,7 +7,8 @@ node unix_default {
     include localrepo
     include domain
 
-    class { 'sudo':
+    class { 'sudo': }
+    sudo::conf{ 'admins':
       priority => 10,
       content  => "%wheel ALL=(ALL) NOPASSWD: ALL",
     }
