@@ -4,6 +4,7 @@ node default {
 
 node unix_default {
     include screen
+    include domain
 }
 
 node styx inherits unix_default {
@@ -32,17 +33,14 @@ node styx inherits unix_default {
   }
 
   class { 'hiera':
-    hierarchy    => [
-      '%{::fqdn}',
-      '%{::domain}',
-      'common'],
+    hierarchy    => common,
   } 
 
-  apache::vhost { 'default':
-    docroot     => '/var/www/document_root',
-    server_name => false,
-    priority    => '',
-    template    => 'apache/virtualhost/vhost.conf.erb',
-  }
+  #apache::vhost { 'default':
+  #  docroot     => '/var/www/document_root',
+  #  server_name => false,
+  #  priority    => '',
+  #  template    => 'apache/virtualhost/vhost.conf.erb',
+  #}
 }
 
