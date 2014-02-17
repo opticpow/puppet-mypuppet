@@ -22,3 +22,6 @@ mod 'screen',
 mod 'domain',
   :git => 'https://github.com/opticpow/puppet-domain.git'
 
+mod 'localrepo',
+  :git => 'https://github.com/opticpow/puppet-localrepo.git'
+
