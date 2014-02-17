@@ -9,6 +9,10 @@ node default {
       priority => 10,
       content  => "%unixadmin ALL=(ALL) NOPASSWD: ALL",
     }
+
+    package { 'vim':
+      ensure => present
+    }
 }
 
 node styx inherits default {
