@@ -34,7 +34,8 @@ node styx inherits unix_default {
   }
 
   class { 'hiera':
-    hierarchy    => common,
+    hierarchy    => [
+      'common'],
   } 
 
   #apache::vhost { 'default':
