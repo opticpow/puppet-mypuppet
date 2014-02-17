@@ -19,6 +19,6 @@ mod 'hunner/hiera',         '0.3.1'
 mod 'screen',
     :git => 'https://github.com/opticpow/puppet-screen.git'
 
-mod 'pbis',
-  :git => 'https://github.com/opticpow/puppet-pbis.git'
+mod 'domain',
+  :git => 'https://github.com/opticpow/puppet-domain.git'
 
