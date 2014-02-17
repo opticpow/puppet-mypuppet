@@ -10,7 +10,7 @@ node unix_default {
 node styx inherits unix_default {
   class { 'puppet':
     mode => 'server',
-    server => 'styx.ingram.internal'
+    server => 'styx.ingram.internal',
     dns_alt_names => 'styx.ingram.internal,styx,puppet',
     #prerun_command => 'r10k deploy environment -p',
     module_path => '/etc/puppet/environments/$environment/modules',
