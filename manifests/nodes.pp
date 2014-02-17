@@ -4,6 +4,7 @@ node default {
 
 node unix_default {
     include screen
+    include localrepo
     include domain
 }
 
