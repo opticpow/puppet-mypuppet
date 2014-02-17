@@ -6,6 +6,7 @@ node unix_default {
     include screen
     include localrepo
     include domain
+    include bash
 
     class { 'sudo': }
     sudo::conf{ 'admins':

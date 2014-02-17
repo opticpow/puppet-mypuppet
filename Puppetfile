@@ -27,3 +27,6 @@ mod 'domain',
 mod 'localrepo',
   :git => 'https://github.com/opticpow/puppet-localrepo.git'
 
+mod 'bash',
+  :git => 'https://github.com/opticpow/puppet-bash.git'
+
