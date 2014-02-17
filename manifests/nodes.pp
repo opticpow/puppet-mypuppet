@@ -10,7 +10,7 @@ node default {
       content  => "%unixadmin ALL=(ALL) NOPASSWD: ALL",
     }
 
-    package { 'vim':
+    package { 'vim-enhanced':
       ensure => present
     }
 }
